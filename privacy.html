@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Neon Tapes</title>
+<meta name="description" content="Privacy policy for the Neon Tapes music publishing application.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0818;
+    --pink: #ff3ea5;
+    --cyan: #22e2ff;
+    --text: #e8e6f2;
+    --muted: #9d9ab4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(60vw 40vw at 15% 0%, rgba(255, 62, 165, .16), transparent 60%),
+      var(--ink);
+    color: var(--text);
+    font-family: Inter, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.7;
+  }
+  main { width: min(760px, 100%); margin: 0 auto; padding: clamp(2rem, 6vw, 4.5rem) 1.25rem 4rem; }
+  .back { color: var(--muted); text-decoration: none; font-size: .9rem; letter-spacing: .1em; text-transform: uppercase; }
+  .back:hover { color: var(--cyan); }
+  h1 {
+    font-family: "Rubik Spray Paint", Inter, sans-serif;
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    line-height: 1;
+    margin: 1.5rem 0 .25rem;
+    text-shadow: 0 0 28px rgba(255, 62, 165, .45);
+  }
+  .updated { color: var(--muted); font-size: .95rem; margin: 0 0 2.5rem; }
+  h2 { font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; color: var(--cyan); margin: 2.5rem 0 .5rem; }
+  p, li { color: var(--muted); }
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.1rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--pink); word-break: break-word; }
+  a:hover, a:focus-visible { color: var(--cyan); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Neon Tapes</a>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 26 September 2026</p>
+
+  <h2>1. Who this covers</h2>
+  <p>
+    “Neon Tapes” (the “App”) is a personal, automated tool that creates original music and
+    publishes it to a single YouTube channel owned by the operator of this App. The App is not
+    offered as a service to other people, has no sign-up, and has no users other than its owner.
+  </p>
+
+  <h2>2. What the App accesses</h2>
+  <p>When the owner signs in with Google, the App requests permission to:</p>
+  <ul>
+    <li>Upload videos to the owner’s own YouTube channel.</li>
+    <li>Set the thumbnail image on the videos it has uploaded.</li>
+  </ul>
+  <p>
+    The App uses these permissions only to publish the music it generates. It does not read,
+    modify or delete any other video, playlist, comment, subscriber list or channel setting.
+  </p>
+
+  <h2>3. What data is stored, and where</h2>
+  <p>
+    The App stores an OAuth refresh token issued by Google. This token lets the App upload on the
+    owner’s behalf without signing in each week. It is stored as an environment value on a
+    private server controlled by the owner, readable only by the owner’s account on that server.
+  </p>
+  <p>
+    The App also stores, in a plain text file on that same server, a record of each song it has
+    published: the date, the musical theme, the song title, the genre, and the resulting YouTube
+    video ID. This exists so the App does not repeat a title it has already released.
+  </p>
+  <p>
+    No other personal data is collected, stored or processed. The App has no database of people,
+    no analytics, no advertising, no cookies and no tracking of any kind. It does not collect
+    information about anyone who watches the videos it publishes; viewer data is handled entirely
+    by YouTube under Google’s own privacy policy.
+  </p>
+
+  <h2>4. Data sharing</h2>
+  <p>Data is never sold, rented, traded or shared with third parties. The only parties involved are:</p>
+  <ul>
+    <li>Google / YouTube, which receives the uploaded video and its description in order to publish it.</li>
+    <li>Google Gemini, which receives the App’s text prompts in order to write song lyrics.</li>
+    <li>Hugging Face, which receives the App’s text prompts in order to generate cover artwork.</li>
+  </ul>
+  <p>
+    None of these receive personal data about the owner or about viewers beyond what is inherent
+    in making the request.
+  </p>
+
+  <h2>5. Google API Services User Data Policy</h2>
+  <p>
+    The App’s use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+  <p>
+    Specifically, data obtained through Google APIs is used only to provide the App’s single
+    function — publishing the owner’s own music to the owner’s own channel — is not transferred to
+    others except as required to provide that function, is not used for advertising, and is not
+    read by humans except where required for security purposes or to comply with applicable law.
+  </p>
+
+  <h2>6. Retention and deletion</h2>
+  <p>
+    The OAuth token is kept only while the App is in use. The owner can revoke the App’s access at
+    any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  </p>
+  <p>
+    Revoking access immediately and permanently ends the App’s ability to reach the YouTube
+    account. The stored token then stops working and can be deleted by removing it from the
+    server’s environment file. The record of published song titles contains no personal data and
+    can be deleted at any time by deleting that file.
+  </p>
+
+  <h2>7. Children</h2>
+  <p>The App is not directed at children and collects no data from anyone, including children.</p>
+
+  <h2>8. Security</h2>
+  <p>
+    The refresh token is kept in a file readable only by the owner’s account on a private server.
+    API keys and tokens are filtered out of the App’s log files before they are written, so that
+    logs can be reviewed or shared without exposing credentials.
+  </p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>
+    If the App’s behaviour changes in a way that affects this policy, this page will be updated and
+    the “Last updated” date above will change.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    Questions about this policy can be sent to the support email address shown on the Google
+    consent screen for this application.
+  </p>
+</main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Tapes</title>
+<meta name="description" content="A new original song every week. Written, composed and produced with AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0818;
+    --pink: #ff3ea5;
+    --cyan: #22e2ff;
+    --text: #e8e6f2;
+    --muted: #9d9ab4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(60vw 40vw at 15% 0%, rgba(255, 62, 165, .22), transparent 60%),
+      radial-gradient(50vw 40vw at 85% 20%, rgba(34, 226, 255, .18), transparent 60%),
+      var(--ink);
+    color: var(--text);
+    font-family: Inter, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+  }
+  main { width: min(760px, 100%); margin: 0 auto; padding: clamp(2.5rem, 8vw, 6rem) 1.25rem 3rem; flex: 1; }
+  h1 {
+    font-family: "Rubik Spray Paint", Inter, sans-serif;
+    font-size: clamp(3rem, 12vw, 6rem);
+    line-height: .95;
+    margin: 0;
+    text-shadow: 0 0 36px rgba(255, 62, 165, .55);
+  }
+  .rule { height: 4px; width: 140px; margin: 1.5rem 0 1.25rem; background: var(--cyan); box-shadow: 0 0 18px var(--cyan); }
+  .lede { font-size: clamp(1.1rem, 2.6vw, 1.35rem); color: var(--text); margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); margin: 2.5rem 0 .5rem; }
+  p { color: var(--muted); margin: 0 0 1rem; }
+  ul { color: var(--muted); padding-left: 1.1rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--pink); }
+  a:hover, a:focus-visible { color: var(--cyan); }
+  footer { border-top: 1px solid rgba(255, 255, 255, .08); padding: 1.5rem 1.25rem; }
+  footer div { width: min(760px, 100%); margin: 0 auto; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Neon&nbsp;Tapes</h1>
+  <div class="rule"></div>
+  <p class="lede">A new original song every week. Written, composed and produced with AI.</p>
+
+  <p>
+    Neon Tapes is a personal music project built on one rule: a brand-new track, made from
+    scratch, every single week. Late-night synth-pop, dream pop, indie, R&amp;B, folk — the genre
+    moves around, the schedule doesn't.
+  </p>
+
+  <h2>How each song is made</h2>
+  <ul>
+    <li>A language model writes the lyrics, tempo, key and mood.</li>
+    <li>An open-source music model (ACE-Step&nbsp;1.5) performs the song, vocals and all.</li>
+    <li>The recording is levelled, given cover art, and rendered into a video.</li>
+    <li>The finished video is published to the channel automatically.</li>
+  </ul>
+
+  <p>
+    Nothing is sampled from existing music, and every track is original to this channel. Each
+    upload is labelled as AI-generated, as YouTube requires.
+  </p>
+
+  <h2>Links</h2>
+  <p>
+    <a href="./privacy.html">Privacy policy</a>
+  </p>
+</main>
+<footer>
+  <div>Neon Tapes — a personal, automated music project.</div>
+</footer>
+</body>
+</html>
